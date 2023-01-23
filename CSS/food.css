@@ -12,8 +12,8 @@ html{
 
 #navbar {
   display: flex;
-  /* position: absolute; */
-  position: sticky;
+  position: fixed;
+  /* position: sticky; */
   top: 0;
   width: 100%;
   align-items: center;
@@ -64,7 +64,7 @@ html{
     padding: 5px 0px;
     height: 500px;
     position: relative;
-    margin-top: -9%;
+    /* margin-top: -9%; */
     align-items: center;
     justify-content: center;
     background: url(../Image/spaghetti-g75255763a_1920.jpg) no-repeat center center/cover;
