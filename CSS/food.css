@@ -129,7 +129,7 @@ html{
   position: absolute;
   /* background: url('../Image/tech.jpg') no-repeat center center/cover; */
   /* background: linear-gradient(90deg, blue, yellow); */
-  background-color: coral;
+  background-color: red;
   height: 100%;
   width: 100%;
   z-index: -2;
