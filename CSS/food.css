@@ -127,7 +127,9 @@ html{
 #client-section::before{
   content: " ";
   position: absolute;
-  background: url('../Image/tech.jpg') no-repeat center center/cover;
+  /* background: url('../Image/tech.jpg') no-repeat center center/cover; */
+  /* background: linear-gradient(90deg, blue, yellow); */
+  background-color: coral;
   height: 100%;
   width: 100%;
   z-index: -2;
@@ -147,6 +149,7 @@ html{
 
 #clients img{
   height: 150px;
+  width: 150px;
 }
 
 /* Contact Section */
