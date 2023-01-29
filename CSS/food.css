@@ -8,12 +8,16 @@ html{
   scroll-behavior: smooth;
 }
 
+:root{
+  --dark : brown;
+  --light : sandybrown;
+}
+
 /* Navigation Bar */
 
 #navbar {
   display: flex;
   position: fixed;
-  /* position: sticky; */
   top: 0;
   width: 100%;
   align-items: center;
@@ -30,6 +34,7 @@ html{
 #logo img {
   margin: 5px 5px;
   height: 50px;
+  border-radius: 5px;
 }
 
 /* Navigation Bar : List */
@@ -42,6 +47,7 @@ html{
 
 #navbar ul li {
   list-style: none;
+  /* padding: 10px; */
 }
 
 #navbar ul li a {
@@ -53,6 +59,7 @@ html{
 }
 #navbar ul li a:hover {
   color: black;
+  /* padding: 0 10px; */
   background-color: white;
 }
 
@@ -97,14 +104,17 @@ html{
     border-radius: 25px ;
 }
 #services .box{
-    border: 2px solid brown;
+    border: 2px solid var(--dark);
+    background-color: var(--dark);
+    color: sandybrown;
     margin: 5px;
     padding: 40px 10px;
     border-radius: 25px;
-    background-color: rgb(219, 205, 205);
+    /* background-color: rgb(219, 205, 205); */
 }
 #services .box img{
     height: 150px;
+    border-radius: 5px;
     display: block;
     margin: auto;
 }
@@ -117,6 +127,7 @@ html{
 
 #client-section{
   display: flex;
+  color: var(--dark);
   justify-content: center;
   align-items: center;
   position: relative;
@@ -127,13 +138,10 @@ html{
 #client-section::before{
   content: " ";
   position: absolute;
-  /* background: url('../Image/tech.jpg') no-repeat center center/cover; */
-  /* background: linear-gradient(90deg, blue, yellow); */
-  background-color: coral;
+  background-color: var(--light);
   height: 100%;
   width: 100%;
   z-index: -2;
-  opacity: 0.9;
 }
 
 #clients{
@@ -164,12 +172,13 @@ html{
   height: 100%;
   width: 100%;
   z-index: -1;
-  background: url('../Image/contact.jpg') no-repeat center center/cover;
+  /* background: url('../Image/contact.jpg') no-repeat center center/cover; */
   opacity: 0.8;
 }
 
 #contact-box{
   display: flex;
+  
   justify-content: center;
   align-items: center;
   padding-bottom: 50px;
@@ -180,12 +189,9 @@ html{
   width: 100%;
   padding: 0.5rem 0 0.5rem 0.5rem;
   border-radius: 10px;
+  border: 2px solid var(--dark);
   font-size: 1.1rem;
   margin-top: 5px;
-}
-
-#contact-box textarea{
-  border-color: black;
 }
 
 
@@ -196,6 +202,7 @@ html{
   font-size: 1.4rem;
   font-family: 'ubuntu';
   margin-left: 5px;
+  color: var(--dark);
 }
 
 .form-group{
@@ -203,9 +210,10 @@ html{
 }
 
 #contactButton{
-  background-color: rgb(196, 110, 110);
+  background-color: var(--dark);
   cursor: pointer;
-  border: 2px solid black;
+  border: 2px solid var(--dark);
+  color: var(--light);
   padding: 0.5rem;
   width: 50%;
   display: block;
@@ -229,6 +237,7 @@ Footer{
 .h-primary{
   font-family: 'ubuntu';
     font-size: 3.8rem;
+    color: var(--dark);
     padding: 12px;
 }
 
